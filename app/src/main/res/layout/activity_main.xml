@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textviewError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginStart="162dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/buttonPower"
+        android:layout_width="164dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Power"
+        app:layout_constraintEnd_toStartOf="@+id/buttonTimer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pwr" />
+
+    <ImageButton
+        android:id="@+id/buttonTimer"
+        android:layout_width="167dp"
+        android:layout_height="105dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Timer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonPower"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tmr" />
+
+    <ImageButton
+        android:id="@+id/buttonMode"
+        android:layout_width="163dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:contentDescription="Mode"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSpeed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPower"
+        app:srcCompat="@drawable/mde" />
+
+    <ImageButton
+        android:id="@+id/buttonSpeed"
+        android:layout_width="163dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:contentDescription="Speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonMode"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTimer"
+        app:srcCompat="@drawable/spd" />
+
+    <ImageButton
+        android:id="@+id/buttonUp"
+        android:layout_width="163dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="15dp"
+        android:contentDescription="Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMode"
+        app:srcCompat="@drawable/upa" />
+
+    <ImageButton
+        android:id="@+id/buttonDown"
+        android:layout_width="163dp"
+        android:layout_height="106dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="9dp"
+        android:contentDescription="Down"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUp"
+        app:srcCompat="@drawable/dna" />
+
+    <ImageButton
+        android:id="@+id/buttonBeep"
+        android:layout_width="59dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="Beep"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bep" />
+
+</android.support.constraint.ConstraintLayout>
